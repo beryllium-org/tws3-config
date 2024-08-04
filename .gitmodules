@@ -4,3 +4,6 @@
 [submodule "submodules/CircuitMPY"]
 	path = submodules/CircuitMPY
 	url = https://github.com/beryllium-org/CircuitMPY
+[submodule "submodules/CircuitPython_AXP2101"]
+	path = submodules/CircuitPython_AXP2101
+	url = https://github.com/CDarius/CircuitPython_AXP2101

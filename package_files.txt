@@ -1,0 +1,7 @@
+file 10-I2Ctws3-init.lja /boot/boot.d/10-I2Ctws3-init.lja
+file 11-AXP2101-mod-init.lja /boot/boot.d/11-AXP2101-mod-init.lja
+file 12-AXP2101-bat-init.py /boot/boot.d/12-AXP2101-bat-init.py
+mpy submodules/CircuitPython_AXP2101/axp2101.py axp2101.mpy
+file axp2101.mpy /lib/axp2101.mpy
+file axp2101pmic.lja /bin/axp2101pmic.lja
+file axp2101pmic.py /bin/axp2101pmic.py

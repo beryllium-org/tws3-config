@@ -1,0 +1,3 @@
+pexec systemprints(2, "Loading AXP2101 module")
+axp2101pmic -i
+pexec systemprints(1, "Loading AXP2101 module")

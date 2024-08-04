@@ -12,6 +12,6 @@ chdir("files")
 execstr = ""
 for filee in listdir():
     execstr += f", '{filee}'"
-execstr = "compress(" + execstr[2:] + ", '../package.jpk')"
+execstr = "compress(" + execstr[2:] + ", '../tws3-config.jpk')"
 exec(execstr)
 print("Done.")
