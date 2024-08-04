@@ -5,3 +5,5 @@ mpy submodules/CircuitPython_AXP2101/axp2101.py axp2101.mpy
 file axp2101.mpy /lib/axp2101.mpy
 file axp2101pmic.lja /bin/axp2101pmic.lja
 file axp2101pmic.py /bin/axp2101pmic.py
+file shutdown.lja /bin/shutdown.lja
+file shutdown.py /bin/shutdown.py
