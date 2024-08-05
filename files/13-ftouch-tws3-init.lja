@@ -1,0 +1,3 @@
+pexec systemprints(2, "Loading touchscreen")
+mkftouch --i2c /dev/i2c1
+pexec systemprints(1, "Loading touchscreen")
