@@ -20,6 +20,8 @@ class battery:
 
     @property
     def status(self) -> bool:
+        if not self._pmic.is_battery_connected:
+            return "disconnected"
         if self._pmic.battery_status.value == 2:
             return "charging"
         elif self._pmic.battery_status.value == 1:
