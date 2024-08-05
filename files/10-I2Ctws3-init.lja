@@ -1,3 +1,4 @@
-pexec systemprints(2, "Loading system I2C bus")
+pexec systemprints(2, "Loading I2C busses")
 mki2c -b
-pexec systemprints(1, "Loading system I2C bus")
+mki2c -b TOUCH_I2C
+pexec systemprints(1, "Loading I2C busses")
