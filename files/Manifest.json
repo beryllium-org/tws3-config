@@ -2,7 +2,7 @@
     "JPKG_minimum_version": 2,
     "package_name": "tws3-config",
     "version": [1, 0, 0],
-    "dependencies": ["i2ctools"],
+    "dependencies": ["i2ctools", "ftouchutils"],
     "conflicts": [],
     "install": "installer.py",
     "remove": "uninstaller.py",
