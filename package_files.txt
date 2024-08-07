@@ -11,12 +11,14 @@ mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/i2c_bits.py i2c
 mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/i2c_struct_array.py i2c_struct_array.mpy
 mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/i2c_struct.py i2c_struct.mpy
 mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/__init__.py __init__.mpy
+mpy submodules/CircuitPython_BMA423/bma423.py bma423.mpy
 folder /lib/adafruit_register
 file axp2101.mpy /lib/axp2101.mpy
 file axp2101pmic.lja /bin/axp2101pmic.lja
 file axp2101pmic.py /bin/axp2101pmic.py
 file bma423axis.lja /bin/bma423axis.lja
 file bma423axis.py /bin/bma423axis.py
+file bma423.mpy /lib/bma423.mpy
 file i2c_bcd_alarm.mpy /lib/adafruit_register/i2c_bcd_alarm.mpy
 file i2c_bcd_datetime.mpy /lib/adafruit_register/i2c_bcd_datetime.mpy
 file i2c_bit.mpy /lib/adafruit_register/i2c_bit.mpy
