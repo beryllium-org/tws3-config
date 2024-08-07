@@ -17,12 +17,16 @@ if "i" in vr("opts")["o"]:
                 self._bma = bma
 
             @property
+            def name(self) -> str:
+                return "BMA423-Temp0"
+            @property
             def temperature(self) -> float:
                 return float(self._bma.temperature)
+
         be.based.run("mknod temp")
         vr("node", be.api.getvar("return"))
         be.api.subscript("/bin/stringproccessing/devid.py")
-        be.devices[vr("temp")][vr("dev_id")] = temp(vr("bma"))
+        be.devices["temp"][vr("dev_id")] = temp(vr("bma"))
         del temp
         dmtex("Temperature sensor registered at /dev/temp" + str(vr("dev_id")))
     except:

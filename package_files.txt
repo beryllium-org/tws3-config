@@ -1,6 +1,8 @@
 file 10-I2Ctws3-init.lja /boot/boot.d/10-I2Ctws3-init.lja
 file 11-AXP2101-mod-init.lja /boot/boot.d/11-AXP2101-mod-init.lja
 file 12-AXP2101-bat-init.py /boot/boot.d/12-AXP2101-bat-init.py
+file 13-ftouch-tws3-init.lja /boot/boot.d/13-ftouch-tws3-init.lja
+file 14-BMA423-mod-init.lja /boot/boot.d/14-BMA423-mod-init.lja
 mpy submodules/CircuitPython_AXP2101/axp2101.py axp2101.mpy
 mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/i2c_bcd_alarm.py i2c_bcd_alarm.mpy
 mpy submodules/Adafruit_CircuitPython_Register/adafruit_register/i2c_bcd_datetime.py i2c_bcd_datetime.mpy
@@ -13,6 +15,8 @@ folder /lib/adafruit_register
 file axp2101.mpy /lib/axp2101.mpy
 file axp2101pmic.lja /bin/axp2101pmic.lja
 file axp2101pmic.py /bin/axp2101pmic.py
+file bma423axis.lja /bin/bma423axis.lja
+file bma423axis.py /bin/bma423axis.py
 file i2c_bcd_alarm.mpy /lib/adafruit_register/i2c_bcd_alarm.mpy
 file i2c_bcd_datetime.mpy /lib/adafruit_register/i2c_bcd_datetime.mpy
 file i2c_bit.mpy /lib/adafruit_register/i2c_bit.mpy
