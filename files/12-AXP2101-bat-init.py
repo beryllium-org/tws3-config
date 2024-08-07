@@ -33,9 +33,9 @@ class battery:
     def status(self) -> bool:
         if not self._pmic.is_battery_connected:
             return "disconnected"
-        if self._pmic.battery_status.value == 2:
+        if self._pmic.battery_status.value == 3:
             return "charging"
-        elif self._pmic.battery_status.value == 1:
+        elif self._pmic.battery_status.value == 2:
             return "charged"
         else:
             return "discharging"
