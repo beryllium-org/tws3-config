@@ -1,6 +1,7 @@
 rename_process("axp2101pmic")
 vr("opts", be.api.xarg())
 from axp2101 import AXP2101
+
 vr("i2c", be.devices["i2c"][0])
 if "i" in vr("opts")["o"]:
     be.based.run("mknod AXP2101")

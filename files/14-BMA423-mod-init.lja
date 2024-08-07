@@ -1,0 +1,3 @@
+pexec systemprints(2, "Loading BMA423 module")
+bma423axis -i
+pexec systemprints(1, "Loading BMA423 module")
