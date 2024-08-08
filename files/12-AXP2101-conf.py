@@ -5,12 +5,12 @@ vr("axp")._aldo1_voltage_setpoint = 3300
 vr("axp")._bldo1_voltage_setpoint = 0
 vr("axp")._bldo2_voltage_setpoint = 3300
 vr("axp")._aldo1_voltage_setpoint = 3300
-dmtex("Configured /dev/AXP2101_" + str(vr("dev_id")) + " LDOs")
+dmtex("Configured /dev/AXP2101_0 LDOs")
 if vr("axp")._read_register8(39) != 31:
     vr("axp")._write_register8(39, 31) # 2s on time, 10s off time
-    dmtex("Reconfigured /dev/AXP2101_" + str(vr("dev_id")) + " Control registers")
+    dmtex("Reconfigured /dev/AXP2101_0 Control registers")
 else:
-    dmtex("/dev/AXP2101_" + str(vr("dev_id")) + " registers validated")
+    dmtex("/dev/AXP2101_0 registers validated")
 
 class battery:
     def __init__(self, pmic):
