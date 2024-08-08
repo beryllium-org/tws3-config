@@ -4,6 +4,3 @@
 [submodule "submodules/CircuitMPY"]
 	path = submodules/CircuitMPY
 	url = https://github.com/beryllium-org/CircuitMPY
-[submodule "submodules/Adafruit_CircuitPython_Register"]
-	path = submodules/Adafruit_CircuitPython_Register
-	url = https://github.com/adafruit/Adafruit_CircuitPython_Register
