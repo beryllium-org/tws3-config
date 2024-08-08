@@ -1,8 +1,16 @@
-rename_process("init-axp2101-bat")
-be.based.run("mknod bat")
-vr("node", be.api.getvar("return"))
-be.api.subscript("/bin/stringproccessing/devid.py")
+rename_process("init-axp2101-conf")
 
+vr("axp", be.devices["AXP2101"][0])
+vr("axp")._aldo1_voltage_setpoint = 3300
+vr("axp")._bldo1_voltage_setpoint = 0
+vr("axp")._bldo2_voltage_setpoint = 3300
+vr("axp")._aldo1_voltage_setpoint = 3300
+dmtex("Configured /dev/AXP2101_" + str(vr("dev_id")) + " LDOs")
+if vr("axp")._read_register8(39) != 31:
+    vr("axp")._write_register8(39, 31) # 2s on time, 10s off time
+    dmtex("Reconfigured /dev/AXP2101_" + str(vr("dev_id")) + " Control registers")
+else:
+    dmtex("/dev/AXP2101_" + str(vr("dev_id")) + " registers validated")
 
 class battery:
     def __init__(self, pmic):
@@ -49,7 +57,9 @@ class battery:
         self._pmic.battery_charging_enabled = value
 
 
-vr("axp", be.devices["AXP2101"][0])
+be.based.run("mknod bat")
+vr("node", be.api.getvar("return"))
+be.api.subscript("/bin/stringproccessing/devid.py")
 be.devices[vr("dev_name")][vr("dev_id")] = battery(vr("axp"))
 del battery
 dmtex("Battery sensor registered at /dev/" + vr("dev_name") + str(vr("dev_id")))
