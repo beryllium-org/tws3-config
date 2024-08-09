@@ -6,11 +6,16 @@ vr("axp")._bldo1_voltage_setpoint = 0
 vr("axp")._bldo2_voltage_setpoint = 3300
 vr("axp")._aldo1_voltage_setpoint = 3300
 dmtex("Configured /dev/AXP2101_0 LDOs")
+if vr("axp")._read_register8(24) != 13:
+    vr("axp")._write_register8(0x18, 13) # Charge VBackup at 3v3
+    dmtex("Reconfigured /dev/AXP2101_0 charging register")
+else:
+    dmtex("/dev/AXP2101_0 charging register validated")
 if vr("axp")._read_register8(39) != 31:
     vr("axp")._write_register8(39, 31) # 2s on time, 10s off time
-    dmtex("Reconfigured /dev/AXP2101_0 Control registers")
+    dmtex("Reconfigured /dev/AXP2101_0 button register")
 else:
-    dmtex("/dev/AXP2101_0 registers validated")
+    dmtex("/dev/AXP2101_0 button register validated")
 
 class battery:
     def __init__(self, pmic):

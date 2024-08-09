@@ -1,0 +1,4 @@
+pexec systemprints(2, "Loading PCF8563 module")
+pcf8563rtc -i
+pcf8563rtc -c /dev/rtc0
+pexec systemprints(1, "Loading PCF8563 module")
