@@ -6,8 +6,8 @@ vr("axp")._bldo1_voltage_setpoint = 0
 vr("axp")._bldo2_voltage_setpoint = 3300
 vr("axp")._aldo1_voltage_setpoint = 3300
 dmtex("Configured /dev/AXP2101_0 LDOs")
-if vr("axp")._read_register8(24) != 13:
-    vr("axp")._write_register8(24, 13) # Charge VBackup at 3v3
+if vr("axp")._read_register8(24) != 15:
+    vr("axp")._write_register8(24, 15) # Charge VBackup at 3v3
     dmtex("Reconfigured /dev/AXP2101_0 charging register")
 else:
     dmtex("/dev/AXP2101_0 charging register validated")
