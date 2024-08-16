@@ -4,5 +4,6 @@ file 12-AXP2101-conf.py /boot/boot.d/12-AXP2101-conf.py
 file 13-ftouch-tws3-init.lja /boot/boot.d/13-ftouch-tws3-init.lja
 file 14-BMA423-mod-init.lja /boot/boot.d/14-BMA423-mod-init.lja
 file 15-PCF8563-conf.lja /boot/boot.d/15-PCF8563-conf.lja
+file 16-DRV2605-conf.lja /boot/boot.d/16-DRV2605-conf.lja
 file shutdown.lja /bin/shutdown.lja
 file shutdown.py /bin/shutdown.py

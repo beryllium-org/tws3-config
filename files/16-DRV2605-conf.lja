@@ -1,0 +1,3 @@
+pexec systemprints(2, "Loading DRV2605 module")
+drv2605vib -i
+pexec systemprints(1, "Loading DRV2605 module")
