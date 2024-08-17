@@ -1,0 +1,3 @@
+pexec systemprints(2, "Loading I2S bus")
+mki2s -b I2S_BCK -w I2S_WS -d I2S_DOUT
+pexec systemprints(1, "Loading I2S bus")
