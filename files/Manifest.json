@@ -2,7 +2,7 @@
     "JPKG_minimum_version": 2,
     "package_name": "tws3-config",
     "version": [1, 0, 0],
-    "dependencies": ["i2ctools", "axp2101utils", "ftouchutils", "bma423utils", "drvutils", "pcf8563utils"],
+    "dependencies": ["i2ctools", "i2stools", "axp2101utils", "ftouchutils", "bma423utils", "drvutils", "pcf8563utils"],
     "conflicts": [],
     "install": "installer.py",
     "remove": "uninstaller.py",
