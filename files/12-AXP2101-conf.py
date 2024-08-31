@@ -6,6 +6,8 @@ vr("axp")._aldo2_voltage_setpoint = 0
 vr("axp")._aldo4_voltage_setpoint = 0
 vr("axp")._bldo1_voltage_setpoint = 0
 vr("axp")._bldo2_voltage_setpoint = 0
+vr("axp")._dldo1_voltage_setpoint = 0
+vr("axp")._dldo2_voltage_setpoint = 0
 dmtex("Configured /dev/AXP2101_0 LDOs")
 
 
