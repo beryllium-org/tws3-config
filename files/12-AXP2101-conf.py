@@ -56,8 +56,10 @@ class battery:
         self._pmic.battery_charging_enabled = value
 
 
-be.based.run("mknod bat")
-vr("node", be.api.getvar("return"))
+be.api.setvar("argj", "mknod bat")
+be.api.subscript("/bin/mknod.py")
+vr("node", be.api.getvar("out"))
+be.api.setvar("out", None)
 be.api.subscript("/bin/stringproccessing/devid.py")
 be.devices[vr("dev_name")][vr("dev_id")] = battery(vr("axp"))
 del battery
